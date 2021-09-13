@@ -14,8 +14,9 @@ function kata1() {
         num += i + " "
     }
     num += i
-    showResults(num)
+    return num    
 }
+showResults(kata1())
 
 function kata2() {
     let num = ""
@@ -24,8 +25,9 @@ function kata2() {
         num += i + " "
     }
     num += i
-    showResults(num)
+    return num
 }
+showResults(kata2())
 
 function kata3() {
     let num = ""
@@ -34,8 +36,9 @@ function kata3() {
         num += i+ " "
     }
     num += i
-    showResults(num)
+   return num
 }
+showResults(kata3())
 
 function kata4() {
     let num = ""
@@ -44,8 +47,9 @@ function kata4() {
         num += i+ " "
     }
     num += i
-    showResults(num)
+    return num
 }
+showResults(kata4())
 
 function kata5() {
     let num = ""
@@ -55,8 +59,9 @@ function kata5() {
         num += i + " "
     }
     num += i
-    showResults(num)
+    return num
 }
+showResults(kata5())
 
 function kata6() {
     let num = ""
@@ -66,8 +71,9 @@ function kata6() {
         num += i + " "
     }
     num += i
-    showResults(num)
+    return num
 }
+showResults(kata6())
 
 function kata7() {
     let num = ""
@@ -76,8 +82,9 @@ function kata7() {
         num += i + " "
     }
     num += i
-    showResults(num)
+    return num
 }
+showResults(kata7())
 
 function kata8() {
     let num = ""
@@ -87,19 +94,21 @@ function kata8() {
         num += i + " "
     }
     num += i
-    showResults(num)
+    return num
 }
+showResults(kata8())
 
 function kata9() {
     let num = ""
     let i = 0
     for(i = 5; i < 95; i++) {
-        if(1%5 == 0 && i%2 != 0)
+        if(i%5 == 0 && i%2 != 0)
         num += i + " "
     }
     num += i
-    showResults(num)
+    return num
 }
+showResults(kata9())
 
 function kata10() {
     let num = ""
@@ -110,8 +119,9 @@ function kata10() {
             num += sampleArray[i]
         }
     }
-    showResults(num)
+    return num
 }
+showResults(kata10())
 
 function kata11() {
     let num = ""
@@ -124,8 +134,9 @@ function kata11() {
                 num += sampleArray[i]
         }
     }
-    showResults(num)
+    return num
 }
+showResults(kata11())
 
 function kata12() {
     let num = ""
@@ -138,8 +149,9 @@ function kata12() {
                 num += sampleArray[i]
         }
     }
-    showResults(num)
+    return num
 }
+showResults(kata12())
 
 function kata13() {
     let num = ""
@@ -152,32 +164,36 @@ function kata13() {
                 num += sampleArray[i]
         }
     }
-    showResults(num)
+    return num
 }
+showResults(kata13())
 
 function kata14() {
     let num = ""
     for (let i = 0; i < sampleArray.length; i++) {
         num += sampleArray[i] * sampleArray[i] + " "
     }
-    showResults(num)
+    return num
 }
+showResults(kata14())
 
 function kata15() {
     let sum = 0
     for (let i = 1; i <= 20; i++) {
         sum = sum + i
     }
-    showResults(sum)
+    return sum
 }
+showResults(kata15())
 
 function kata16() {
     let sum = 0
     for (let i = 0; i < sampleArray.length; i++) {
         sum = sum + sampleArray[i]
     }
-    showResults(sum)
+    return sum
 }
+showResults(kata16())
 
 function kata17() {
     let numMenorArray = sampleArray[0]
@@ -186,8 +202,9 @@ function kata17() {
             numMenorArray = sampleArray[i]
         }
     }
-    showResults(numMenorArray)
+    return numMenorArray
 }
+showResults(kata17())
 
 
 function kata18() {
@@ -197,8 +214,10 @@ function kata18() {
             numMaiorArray = sampleArray[i]
         }
     }
-    showResults(numMaiorArray)
+    return numMaiorArray
 }
+showResults(kata18())
+
 
 /**
  * Daqui em diante são os bônus, por sua conta e risco
@@ -219,6 +238,8 @@ function kata18() {
         body.appendChild(element)
     }
  }
+ kataBonus1()
+
 
 function kataBonus2() {
     const body = document.querySelector("body")
@@ -237,6 +258,8 @@ function kataBonus2() {
         body.appendChild(element)
     }
 }
+kataBonus2()
+
 
 function kataBonus3() {
     const body = document.querySelector("body")
@@ -253,6 +276,8 @@ function kataBonus3() {
         body.appendChild(element)
     }
 }
+kataBonus3()
+
 
 function kataBonus4() {
     const body = document.querySelector("body")
@@ -274,6 +299,8 @@ function kataBonus4() {
         body.appendChild(element)
     }
 }
+kataBonus4()
+
 
 function kataBonus5() {
     const body = document.querySelector("body")
@@ -295,29 +322,4 @@ function kataBonus5() {
         body.appendChild(element)
     }
 }
-
-/* Respostas */
-
-kata1()
-kata2()
-kata3()
-kata4()
-kata5()
-kata6()
-kata7()
-kata8()
-kata9()
-kata10()
-kata11()
-kata12()
-kata13()
-kata14()
-kata15()
-kata16()
-kata17()
-kata18()
-kataBonus1()
-kataBonus2()
-kataBonus3()
-kataBonus4()
 kataBonus5()
